@@ -43,7 +43,12 @@ public class Lab2 {
 
 
 
+
+       int x= 10;
+       calc.doStuff(x);
+
     }
+
 
 
 

@@ -42,10 +42,7 @@ public class Calculator {
     //Teme ex. 7
 
     public double degree(double fahrenheit){
-        double degreeresult = (0.55555555 * (fahrenheit-32)) ; //aici oricum scriu impartirea nu imi calculeaza bine;
-        // si daca o scriu ((5/9)*(F-32)) si daca o scriu 5/9 *(F-32) si (F-32) * (5/9) si orice alte variante :))
-        // imi da 0 la rezultat si nu imi apare nici o eroare
-        // dar daca fac calculul direct cu rezultatul impartiri merge, so i dunno
+        double degreeresult = (0.55555555 * (fahrenheit-32)) ;
         return degreeresult;
     }
 
@@ -53,6 +50,12 @@ public class Calculator {
     public double toMeters(double inch){
         double distresult= (inch * 0.0254);
         return distresult;
+    }
+
+
+    public static void doStuff(int y){
+        y= y+5;
+        System.out.println(y);
     }
 
 }
