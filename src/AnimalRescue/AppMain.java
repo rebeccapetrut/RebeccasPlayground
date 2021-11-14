@@ -3,44 +3,44 @@ package AnimalRescue;
 public class AppMain {
 
     public static void main(String[] args) {
-                Dog rex = new Dog();
-                rex.name = "Rex";
-                rex.breed = "Labradord";
-                rex.age = 1;
-                System.out.println(rex.name);
-                System.out.println(rex.age);
+                Animal rex = new Animal();
+                rex.setName("Rex");
+                rex.setBreed("Labrador");
+                rex.setAge(1);
+                System.out.println(rex.getName());
+                System.out.println(rex.getAge());
                 rex.play();
-                rex.name = "Blackie";
-                System.out.println(rex.name);
+                rex.setName("Blackie");
+                System.out.println(rex.getName());
 
-                Dog freddie = new Dog();
-                System.out.println(freddie.name);
-                freddie.name = "Freddie";
+                Animal freddie = new Animal();
+                System.out.println(freddie.getName());
+                freddie.setName("Freddie");
 
-                Dog max = new Dog();
-                max.breed = "Buldog";
+                Animal max= new Animal();
+                max.setBreed("Buldog");
 
                 Recreation activity = new Recreation();
-                activity.activity1 = "petting";
-                activity.activity2 = "eating";
-                System.out.println(activity.activity1);
+                activity.setActivity("petting");
+                activity.setActivity2("eating");
+                System.out.println(activity.getActivity1());
 
-                DogFood food = new DogFood();
-                food.name = "BritCare";
-                food.weightAvailability = 23;
-                food.weight = 53;
-                System.out.println(food.name);
+                AnimalFood food = new AnimalFood();
+                food.setName("BritCare");
+                food.setWeightAvailability(23);
+                food.setWeight(53);
+                System.out.println(food.getName());
 
-                Girl girl = new Girl();
-                girl.name = "Jane";
-                girl.age = 24;
-                girl.money = 2500;
-                System.out.println(girl.name);
+                Rescuer girl = new Rescuer();
+                girl.setName("Jane");
+                girl.setAge(24);
+                girl.setMoney(2500);
+                System.out.println(girl.getName());
 
                 Veterinary veterinary = new Veterinary();
-                veterinary.name = "Vetty";
-                veterinary.specialization = "doggo doc";
-                System.out.println(veterinary.specialization);
+                veterinary.setName("Vetty");
+                veterinary.setSpecialization("doggo doc");
+                System.out.println(veterinary.getSpecialization());
 
             }
         }

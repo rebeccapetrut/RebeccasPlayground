@@ -14,7 +14,7 @@ public class Lab3 {
         op.verifyNumber(2);
         System.out.println(op.verifyNumber(2));
 
-        op.givenNumber(2);
+        op.givenNumber(5);
 
         op.isNumberEven(2);
         System.out.println(op.isNumberEven(2));
