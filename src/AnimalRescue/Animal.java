@@ -1,7 +1,7 @@
 package AnimalRescue;
 
 public class Animal {
-        private String breed;
+
         private int age;
         private float weight;
         private int heightInCm;
@@ -13,13 +13,9 @@ public class Animal {
         private String faveFood;
         private String faveRecreation;
 
-        public String getBreed(){
-            return breed;
-        }
 
-        public void setBreed(String breed){
-            this.breed = breed;
-        }
+
+
 
         public int getAge(){
             return age;
@@ -111,10 +107,11 @@ public class Animal {
         }
 
         public void speak(){
-            System.out.println("Bark! ");
+            System.out.println("blabla!");
         }
 
         public void play(){
-            System.out.println("Playing fetch...");
+            System.out.println("playing");
         }
+
     }

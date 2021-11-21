@@ -21,7 +21,8 @@ public class Lab4 {
         op.sumTheInterval(111,8899);
         op.getAverageDivisibleBySeven(1,100);
         op.FibonacciPower();
-        op.CozaLozaWoza(1,100);
+        op.CozaLozaWoza(1,110);
+
 
 
 

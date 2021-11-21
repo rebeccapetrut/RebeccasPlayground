@@ -4,7 +4,7 @@ public class AnimalFood {
     private String name;
     private float weight;
     private float weightAvailability;
-    private String breedType;
+
     private float price;
     private String taste;
 
@@ -32,13 +32,7 @@ public class AnimalFood {
         this.weightAvailability = weightAvailability;
     }
 
-    public String getBreedType(){
-        return breedType;
-    }
 
-    public void setBreedType(String breedType){
-        this.breedType = breedType;
-    }
 
     public float getPrice(){
         return price;
