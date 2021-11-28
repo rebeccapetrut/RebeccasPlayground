@@ -20,8 +20,9 @@ public class Lab5 {
         String[] linesArray = op.figureLines();
         op.printLines(linesArray);
 
-        int[] myArray8 = op.populateTheArraypls(20);
-        System.out.println(op.verifyNumberFromTheArray(myArray8, 10));
+        int[] myArrray = op.populateTheArraypls(10);
+        int[] resultMyArray = op.verifyNumberFromTheArray(myArrray, 3);
+        op.printArray(resultMyArray);
 
         int[] array9 = {0, 3, 10, 5, 17, 1};
         System.out.println(op.returnSecondSmallerNumberFromArray(array9));
@@ -29,7 +30,7 @@ public class Lab5 {
 
         int[] theArray = op.populatetheArr(10);
         int[] emptyArray = op.emptyArray(10);
-        System.out.println(op.copyValueFromPopulateArray(theArray, emptyArray));
+        op.copyValueFromPopulateArray(theArray, emptyArray);
 
 
 
