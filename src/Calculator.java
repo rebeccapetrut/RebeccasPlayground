@@ -28,25 +28,25 @@ public class Calculator {
     }
 
     //new
-    public double substract(double fisrt, double second) {
+    public double subtract(double fisrt, double second) {
         double result = fisrt - second;
         return result;
     }
 
     //new
-    public float substract(float fisrt, float second) {
+    public float subtract(float fisrt, float second) {
         float result = fisrt - second;
         return result;
     }
 
 
-    public int devide(int first, int second) {
+    public int divide(int first, int second) {
         int result = first / second;
         return result;
     }
 
     //new
-    public double devide(double first, double second, double third) {
+    public double divide(double first, double second, double third) {
         double result = first / second / third;
         return result;
     }

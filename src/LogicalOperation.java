@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class LogicalOperation {
 
@@ -43,7 +41,7 @@ public class LogicalOperation {
         if (first > 3 && first != 4) {
             return ("The number is greater than 3 and not equal to 4");
         } else if (first == 4) {
-            return ("The number is eqaul to 4");
+            return ("The number is equal to 4");
         } else if (first < 3) {
             return ("The number is lower than 3");
         }
@@ -176,7 +174,7 @@ public class LogicalOperation {
     }
 
     //Tema ex. 8
-    public float sumAndAvarage(int first) {
+    public float sumAndAverage(int first) {
         int sum = 0;
         for (int x = first; x <= 100; x++) {
             sum = x + sum;
@@ -206,7 +204,7 @@ public class LogicalOperation {
     }
 
     //Tema ex. 2
-    public void countNumbersBackwords(int first) {
+    public void countNumbersBackwards(int first) {
         int x = first;
         while (x >= -100) {
             System.out.println(x);
@@ -567,11 +565,11 @@ public class LogicalOperation {
         }
     }
 
-    //Tema ex. 2
+    //Tema ex.
+    // last index of adauga nr mai mic, 2 in loc de 3
 
     public void printMyList(List<Integer> myList, int number) {
-        for (int i = 0; i < myList.size(); i++) {
-        }
+//        myList.add(number);
         myList.add(myList.lastIndexOf(number));
         System.out.println(myList);
     }
@@ -641,29 +639,23 @@ public class LogicalOperation {
         System.out.print(myStringList);
     }
 
-    //Tema ex. 6 - aici nu stiu de ce nu vrea sa puna numarul pe prima pozitie :))
-    // am incercat si cu index 0, si fara index in ideea ca poate il pune pe prima pozitie automat, no luck
-    // si nu imi dau seama de ce pune un numar mai mic decat cel introdus, gen 2 in loc de 3
+    //Tema ex. 6
 
     public void printMyList(List<Double> my6List, double number) {
-        for (int i = 0; i < my6List.size(); i++) {
-            my6List.add(0, number);
-            System.out.println(my6List);
-        }
-
+        my6List.add(0, number);
+        System.out.println(my6List);
     }
 
-    //Tema ex. 7 aici ma gandesc ca nu trebuia sa scriem manual cu sout pozitiie, nu stiu daca e
-    // ok ideea, daaar nu reusesc sa il fac pe j sa porneasca de la valoarea 0,
-    // am incercat si j = i-1 dar imi zice ca e out of bounds
-    // si nu stiu exact unde ar trebui sa pun sout pentru ca asa cum e acum imi afiseaza fiecare valoare
-    // de 5 ori, adica lungimea listei; daca il pun in al 2-lea for nu mai citeste variabila j
+
+    //Tema ex. 7
 
     public void printThisMfList(List<Integer> myList) {
         for (int i = 0; i < myList.size(); i++) {
             for (int j = 0; j < myList.size(); j++) {
-                System.out.println("Pe pozitia " + myList.get(j) + " este valoarea " + myList.get(i));
+//
+
             }
+            System.out.println("Pe pozitia " + i + " este valoarea " + myList.get(i));
         }
     }
 
@@ -754,11 +746,11 @@ public class LogicalOperation {
     //Tema optionala siruri
     // Ex.1
 
-    public void printTheArrayWithTheSpecificNumber(int[] thisArray){
+    public void printTheArrayWithTheSpecificNumber(int[] thisArray) {
         int index = 3;
         int value = 5;
-        for(int i = thisArray.length-1; i > index; i--){
-            thisArray[i] = thisArray[i-1];
+        for (int i = thisArray.length - 1; i > index; i--) {
+            thisArray[i] = thisArray[i - 1];
         }
         thisArray[index] = value;
         System.out.println(thisArray);
@@ -767,14 +759,14 @@ public class LogicalOperation {
 
     //Tema ex. 2
 
-    public void getSmallestAndBiggestNumberFromArray(){
+    public void getSmallestAndBiggestNumberFromArray() {
         int[] myArray = {2, 50, 10, 34, 15, 6, 79, 4};
         int smallest = myArray[0];
         int biggest = myArray[0];
-        for(int i = 0; i < myArray.length; i++){
-            if (myArray[i] < smallest){
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] < smallest) {
                 smallest = myArray[i];
-            }else if (myArray[i] > biggest){
+            } else if (myArray[i] > biggest) {
                 biggest = myArray[i];
             }
         }
@@ -783,36 +775,35 @@ public class LogicalOperation {
     }
 
     //Tema ex. 3
-    public void reverseTheArray (){
-        int [] myArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
-        int lastIndex = myArray[myArray.length-1];
-        for(int i = myArray.length-1; i < myArray.length; i--){
+    public void reverseTheArray() {
+        int[] myArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+        int lastIndex = myArray[myArray.length - 1];
+        for (int i = myArray.length - 1; i < myArray.length; i--) {
             System.out.println(myArray[i]);
         }
     }
 
     //Tema ex. 4
-    public void printDuplicateNumbersFromArray(){
+    public void printDuplicateNumbersFromArray() {
         int[] myArray = {15, 20, 30, 45, 15, 50, 60, 20, 45};
-        for(int i = 0; i < myArray.length; i++){
-            for(int j = 0; j < myArray.length; j++)
-            if( myArray[i] == myArray[j] && i != j){
-                myArray[j] = myArray[i];
-                System.out.println(myArray[j]);
-            }
+        for (int i = 0; i < myArray.length; i++) {
+            for (int j = 0; j < myArray.length; j++)
+                if (myArray[i] == myArray[j] && i != j) {
+                    myArray[j] = myArray[i];
+                    System.out.println(myArray[j]);
+                }
         }
     }
 
-    //Tema ex. 5 - aici am incercat sa fac un al 3-lea string care sa contina cuvintele comune
-    // dar nu prea a mers :))
+    //Tema ex. 5
 
-    public void printCommonElementsFromArray(){
+    public void printCommonElementsFromArray() {
         String[] myStringOfArray = {"This is the result of me having no inspiration"};
         String[] mySecondString = {"The result of having no inspiration"};
         String[] myThirdString = new String[myStringOfArray.length];
-        for (int i = 0; i < myStringOfArray.length; i++){
-            for(int j = 0; j < mySecondString.length; j++){
-                if(myStringOfArray[i].equals(mySecondString[j])){
+        for (int i = 0; i < myStringOfArray.length; i++) {
+            for (int j = 0; j < mySecondString.length; j++) {
+                if (myStringOfArray[i].equals(mySecondString[j])) {
                     myThirdString[i] = mySecondString[j];
                 }
                 System.out.println(myThirdString[i]);
@@ -822,8 +813,8 @@ public class LogicalOperation {
 
     //Tema ex. 6
 
-    public int[] returnTheArrayInAscendingOrder(int[] myArray){
-        for(int i = 0; i < myArray.length; i++) {
+    public int[] returnTheArrayInAscendingOrder(int[] myArray) {
+        for (int i = 0; i < myArray.length; i++) {
             for (int j = 0; j < myArray.length; j++) {
                 if (myArray[i] > myArray[j]) {
                     int temp = myArray[i];
@@ -835,6 +826,31 @@ public class LogicalOperation {
         return myArray;
     }
 
+    //05.12.22
+    // Tema ex. 5
+
+    public void getArrayPosition(int[] myArray, int value) {
+        try {
+            for (int i = 0; i < myArray.length; i++)
+                System.out.println(myArray[value]);
+        } catch (ArrayIndexOutOfBoundsException error) {
+            System.out.println("Inside catch, number too large.");
+        }
+    }
+
+    //Tema ex. 6
+
+    public void sleep(int seconds) {
+        System.out.println("Sleeping for: ");
+        do {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            seconds--;
+        } while (seconds > 0);
+    }
 
 
 }

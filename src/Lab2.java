@@ -21,19 +21,19 @@ public class Lab2 {
         int substract = calc.substract(x,y);
         System.out.println(result);
 
-        double substract1 = calc.substract(x,y);
+        double subtract1 = calc.substract(x,y);
         System.out.println(result);
 
-        float substract2 = calc.substract(x,y);
+        float subtract2 = calc.substract(x,y);
         System.out.println(result);
 
         double subresult = calc.substract(x, y);
         System.out.println(subresult);
 
-        double devide = calc.devide(100, 2,2);
-        System.out.println(devide);
+        double divide = calc.devide(100, 2);
+        System.out.println(divide);
 
-        float devide1 = calc.devide(100, 23);
+        float divide1 = calc.devide(100, 23);
         System.out.println(result);
 
         float multiply = calc.multiply(25, 10,15);
@@ -70,7 +70,7 @@ public class Lab2 {
         System.out.println("Restul impartirii este " + modulo);
 
        double degreeresult = calc.degree(200);
-       System.out.println(degreeresult + " degree Celcius");
+       System.out.println(degreeresult + " degree Celsius");
 
        double disresult = calc.toMeters(100);
        System.out.println(disresult + " meters");

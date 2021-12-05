@@ -10,10 +10,10 @@ public class Lab4 {
         op.evenNumber(1,100);
         op.oddNumber(1,100);
         System.out.println(op.sumTheNumbers(90));
-        System.out.println(op.sumAndAvarage(90));
+        System.out.println(op.sumAndAverage(90));
         op.printStars();
         op.countNumbers(90);
-        op.countNumbersBackwords(90);
+        op.countNumbersBackwards(90);
         op.countBetweenNumbers(5,10);
         op.verifyBiggerNumber(20,5);
         op.evenNumbers(1,100);
